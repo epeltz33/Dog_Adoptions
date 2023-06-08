@@ -1,0 +1,28 @@
+# .env file
+.env
+
+# Flask file system cache
+.flaskenv
+
+# The directory where pipenv stores its virtualenvs
+~/.local/share/virtualenvs/
+
+# Python build artifacts
+__pycache__
+*.py[cod]
+*$py.class
+
+# Pipfile.lock could create conflicts when collaborating with other developers,
+# so it is often recommended to ignore it in Python projects
+Pipfile.lock
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+ 

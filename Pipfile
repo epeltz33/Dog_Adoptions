@@ -1,0 +1,23 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+flask = "*"
+pymongo = "*"
+flask-pymongo = "*"
+requests = "*"
+jinja2 = "*"
+flask-bootstrap = "*"
+python-dotenv = "*"
+petpy = "*"
+flask-login = "*"
+flask-wtf = "*"
+flask-bcrypt = "*"
+dnspython = "*"
+
+[dev-packages]
+
+[requires]
+python_version = "3.11"

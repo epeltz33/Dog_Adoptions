@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+
+{% block title %}
+    Home - Dog Adoption
+{% endblock %}
+
+{% block content %}
+    <h1>Adopt A Dog!</h1>
+    <p>Find dogs that are looking for a forever home.</p>
+
+    <form action="{{ url_for('search_results') }}" method="post">
+        <div class="form-group">
+            <label for="zipcode">Enter your zip code:</label>
+            <input type="text" id="zipcode" name="zipcode" class="form-control" required>
+        </div>
+        <button type="submit" class="btn btn-primary">Search</button>
+    </form>
+{% endblock %}

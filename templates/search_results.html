@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+
+{% block title %}
+    Search Results - Dog Adoption
+{% endblock %}
+
+{% block content %}
+    <h1>Search Results</h1>
+
+    {% for dog in dogs %}
+        <div class="card mb-3">
+            <img src="{{ dog.photo }}" class="card-img-top" alt="{{ dog.name }}">
+            <div class="card-body">
+                <h5 class="card-title">{{ dog.name }}</h5>
+                <p class="card-text">
+                    Age: {{ dog.age }}<br>
+                    Breed: {{ dog.breed }}<br>
+                    Description: {{ dog.description }}
+                </p>
+            </div>
+        </div>
+    {% endfor %}
+
+    {% if dogs|length == 0 %}
+        <p>No dogs found in your area.</p>
+    {% endif %}
+{% endblock %}

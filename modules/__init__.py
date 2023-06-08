@@ -1,6 +1,6 @@
 from flask import Flask
-from .user import user_blueprint
-from .search import search_blueprint
+from modules.user import user_blueprint
+from modules.search import search_blueprint
 
 
 def create_app():

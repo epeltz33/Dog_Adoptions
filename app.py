@@ -1,4 +1,4 @@
-from flask import Flask
+from flask import Flask, render_template
 from flask_pymongo import PyMongo
 from dotenv import load_dotenv
 from modules.user import user_blueprint
@@ -16,8 +16,16 @@ app.register_blueprint(search_blueprint)
 
 mongo = PyMongo(app)
 
-# other routes here
+@app.route("/search", methods=["POST"])
+def search_results():
+    return render_template("search_results.html")
 
+
+@app.route("/")
+def home():
+    return render_template("home.html")
+
+ 
 
 
 

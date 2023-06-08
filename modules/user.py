@@ -9,13 +9,8 @@ def register():
 
 @user_blueprint.route("/login")
 def login():
-    # handle login logic here
+    
     return render_template("login.html")
-
-
-@user_blueprint.route("/logout")
-def logout():
-    return "Logout page"
 
 
 
